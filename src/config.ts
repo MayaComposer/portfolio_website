@@ -7,6 +7,7 @@ export interface SiteConfig {
   site: string,
   social: {
     github?: string;
+    bluesky?: string;
     linkedin?: string;
     email?: string;
     rss?: boolean;
@@ -16,13 +17,14 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   site: "https://example.com/", // your site url
-  title: "Your's blog",
-  slogan: "Exploring the World and Me",
+  title: "Maya Engel",
+  slogan: "",
   description: "write a description here",
   social: {
     github: "https://github.com/username", // leave empty if you don't want to show the github
-    linkedin: "https://www.linkedin.com/in/someone/", // leave empty if you don't want to show the linkedin
-    email: "example@gmail.com", // leave empty if you don't want to show the email
+    bluesky: "https://bsky.app/profile/mayacomposer.bsky.social",
+    linkedin: "https://www.linkedin.com/in/maya-engel-composer",
+    email: "mayaengelmusicexample@gmail.com", // leave empty if you don't want to show the email
     rss: true, // set this to false if you don't want to provide an rss feed
   },
   homepage: {

@@ -1,27 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import BlogPreview from '../components/BlogPreview.astro'
-import SocialLinks from '../components/SocialLinks.astro'
 import { getCollection } from 'astro:content'
 import { filterPosts } from '../utils/posts'
 import { siteConfig } from '../config'
 
-const posts = await getCollection('blog')
-
-// Configure homepage post filtering
-const homePagePosts = filterPosts(posts, {
-  ...siteConfig.homepage,
-})
 ---
 
 <BaseLayout title={siteConfig.title}>
   <div class="text-left mb-16 mt-20">
-    <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">{siteConfig.slogan}</h1>
-    <p class="text-xl mb-8 text-gray-600 dark:text-gray-300">{siteConfig.description}</p>
-    <SocialLinks />
+    <h1 class="text-4xl font-bold mb-4">{siteConfig.slogan}</h1>
+    <!-- <p class="text-xl mb-8 text-gray-600 dark:text-gray-300">{siteConfig.description}</p> -->
+    <p>You can check out my concert works <a class="hover:bg-neutral-200 dark:hover:bg-neutral-700"  href="/projects/concertworks">here</a></p>
+    <p>You can check out my game audio work <a class="hover:bg-neutral-200 dark:hover:bg-neutral-700"  href="/projects/gameaudio">here</a></p>
+    
   </div>
 
-  <section>
-    {homePagePosts.map((post) => <BlogPreview post={post} />)}
-  </section>
 </BaseLayout>

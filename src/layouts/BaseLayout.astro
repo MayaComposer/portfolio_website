@@ -12,7 +12,7 @@ const { title, description = 'A minimal blog focused on excellent reading experi
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="min-h-screen flex flex-col">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,10 +21,10 @@ const { title, description = 'A minimal blog focused on excellent reading experi
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <ClientRouter />
   </head>
-  <body class="min-h-screen bg-white dark:bg-gray-900">
+  <body class="text-black dark:text-white  min-h-screen bg-white dark:bg-gray-900 flex-1">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <Header transition:persist />
-      <main class="py-12" transition:animate={slide({ duration: '.3s' })}>
+      <main class="py-12 mb-auto" transition:animate={slide({ duration: '.3s' })}>
         <slot />
       </main>
       <Footer transition:persist />

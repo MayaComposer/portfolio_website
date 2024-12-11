@@ -1,7 +1,12 @@
 ---
 const currentYear = new Date().getFullYear();
+import SocialLinks from '../components/SocialLinks.astro'
 ---
 
-<footer class="py-6 text-center text-gray-600 dark:text-gray-400">
-  <p>&copy; {currentYear} Yujian's Blog. All rights reserved.</p>
-</footer>
+
+
+<div class="mt-auto justify-self-auto flex items-center justify-between">
+  <p class="text-xs text-gray-600 dark:text-gray-300">&copy; {currentYear} Maya Engel</p>
+  <div class="transition-opacity duration-300 hover:opacity-90 "><SocialLinks /></div>
+</div>
+
