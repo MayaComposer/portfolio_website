@@ -4,6 +4,9 @@ Allow: /
 Allow: /blog/
 Allow: /tags/
 Allow: /archives/
+Allow: /projects/
+Allow: /contact/
+Allow: /about/
 
 # Sitemap
-Sitemap: https://larry-blog.pages.dev/sitemap.xml
+Sitemap: https://www.mayaengel.com/sitemap-index.xml

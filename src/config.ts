@@ -16,12 +16,12 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  site: "https://example.com/", // your site url
+  site: "https:www.mayaengel.com/", // your site url
   title: "Maya Engel",
   slogan: "",
   description: "write a description here",
   social: {
-    github: "https://github.com/username", // leave empty if you don't want to show the github
+    github: "https://github.com/mayacomposer", // leave empty if you don't want to show the github
     bluesky: "https://bsky.app/profile/mayacomposer.bsky.social",
     linkedin: "https://www.linkedin.com/in/maya-engel-composer",
     email: "mayaengelmusicexample@gmail.com", // leave empty if you don't want to show the email
